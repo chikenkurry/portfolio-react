@@ -1,0 +1,62 @@
+
+.card .layer {
+    background: linear-gradient(to top, rgba(0, 0, 0, 2), rgba(0,0,0,0));
+    position: absolute;
+    bottom: 0; 
+    width: 100%; 
+    height: 75%; 
+    opacity: 0; 
+    transition: 0.3s;
+}
+
+.card .info {
+    position: absolute;
+    bottom: -50%; 
+    padding: 15px;
+    opacity: 0;
+    transition: 0.5s bottom, 1.75s opacity;
+}
+.card-hover {
+    /* Your hover styles here */
+    background-color: lightblue;
+  }
+.card:hover, 
+.card:hover img,
+.card:hover layer,
+.card:active {
+    transform: scale(1.1);
+}
+.card:hover> .layer { 
+    opacity: 1;
+}
+.card:hover .info { 
+    bottom: 0; 
+    opacity: 1;
+}
+.expContainer:hover, › .card:not(:hover) { 
+    filter: blur (5px);
+}
+
+#skillsContainer {
+
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+  }
+  
+  #skillsContainer::-webkit-scrollbar {
+    height: 8px; /* Height of the horizontal scrollbar */
+  }
+  
+  #skillsContainer::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners for the scrollbar thumb */
+  }
+  
+  #skillsContainer::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color of the scrollbar thumb on hover */
+  }
+  
+  #skillsContainer::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color of the scrollbar track */
+  }
