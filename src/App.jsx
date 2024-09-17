@@ -5,9 +5,9 @@ function App() {
   
 
   return (
-    <Router>
+    <Router basename="/portfolio-react">
       <Routes>
-        <Route path="/portfolio-react" element={
+        <Route path="/" element={
           <>
           <Navbar />  
           <Homepage />
