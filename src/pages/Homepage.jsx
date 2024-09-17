@@ -121,7 +121,7 @@ export default function Homepage() {
       </div>
       <div style={{margin:"20px", paddingTop:"20px"}}>
       <motion.img 
-          src="/assets/me1.jpg" 
+          src="./me1.jpg" 
           className="img-fluid" 
           style={{width:"100%", maxWidth:"550px", height:"80%", maxheight:"650px", objectFit:"cover", borderRadius:"50px", marginBottom:"3%"}}
           initial={{ opacity: 0, scale:0.5 }}
