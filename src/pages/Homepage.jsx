@@ -140,7 +140,7 @@ export default function Homepage() {
       </div>
     </div>
 
-    <section id="about" style={{minHeight: "100vh", backgroundImage: "url('src/assets/bg8a.jpeg')", backgroundSize:"cover", backgroundPosition:"top",scrollMarginTop: "30px"}}>
+    <section id="about" style={{minHeight: "100vh", backgroundImage: "url('./bg8a.jpeg')", backgroundSize:"cover", backgroundPosition:"top",scrollMarginTop: "30px"}}>
         
           <div style={{paddingTop:"5%", height:"80px",width:"100%", textAlign:"center", marginBottom:"5%",}}>
             <h1 style={styles.specialText2}>About Me</h1>
@@ -175,7 +175,7 @@ export default function Homepage() {
  
     </section>
 
-      <section id="experience" style={{minHeight: "100vh", backgroundImage: "url('src/assets/bg2.jpeg')", backgroundSize:"cover", backgroundPosition:"top",scrollMarginTop: "1px"}} ref={workRef}>
+      <section id="experience" style={{minHeight: "100vh", backgroundImage: "url('./bg2.jpeg')", backgroundSize:"cover", backgroundPosition:"top",scrollMarginTop: "1px"}} ref={workRef}>
           <div style={{paddingTop:"5%", height:"auto", maxHeight:"150px",width:"100%", textAlign:"center"}}>
             <h1 style={styles.specialText}>Working Experience</h1>
           </div>
@@ -188,7 +188,7 @@ export default function Homepage() {
            <div id="expContainer" className="container" style={styles.display}>
             
             <motion.div className="card" style={styles.cardContainer}  onClick={() => handleCardClick('As a retail associate at Nike, I provided top-tier customer service, assisting customers with product selection, offering personalized recommendations, and ensuring an exceptional in-store experience. I was responsible for maintaining an organized and visually appealing sales floor, handling transactions efficiently, and staying up-to-date with product knowledge to promote the latest merchandise. My role also included contributing to sales targets, managing stock, and fostering a positive, team-oriented environment to enhance customer satisfaction and loyalty.', 'src/assets/nike2.jpg')}>
-                <img src="src/assets/nike.jpeg" style={styles.cardImg}/>
+                <img src="./nike.jpeg" style={styles.cardImg}/>
                 <div className="layer" ></div>
                 <div className="info" style={{color:"white"}}>
                     <h3 className="heading">Nike</h3>
@@ -199,7 +199,7 @@ export default function Homepage() {
             </motion.div>
 
             <motion.div className="card" style={styles.cardContainer} onClick={() => handleCardClick('During the Artbox 2023 expo exhibition, I worked as a salesperson for Oatbedient, where I quickly adapted to the fast-paced environment and effectively engaged with visitors. My ability to grasp new information swiftly allowed me to confidently present our products and address customer inquiries. This not only enhanced the company’s visibility at the event but also earned me positive feedback from my manager, who appreciated my enthusiasm and quick learning ability. My performance contributed to a successful exhibition, showcasing my aptitude for sales and client interaction.', 'src/assets/oat2.PNG')}>
-                <img src="src/assets/oatbedient.JPG" style={styles.cardImg}/>
+                <img src="./oatbedient.JPG" style={styles.cardImg}/>
                 <div className="layer"></div>
                 <div className="info" style={{color:"white"}}>
                     <h3 className="heading">Oatbedient</h3>
@@ -210,7 +210,7 @@ export default function Homepage() {
             </motion.div>
 
             <motion.div {...fadeIn} className="card" style={styles.cardContainer} onClick= {() => handleCardClick('Led a platoon of 15 in executing various high-stakes missions, including the National Day Parade (NDP). Additionally, played a key role in managing the networking infrastructure, ensuring seamless connectivity between critical equipment, such as establishing and maintaining reliable connections between cameras and the server.', 'src/assets/army2.jpg')}>
-                <img src="src/assets/army.jpeg" style={{...styles.cardImg, minHeight:"400px"}}/>
+                <img src="./army.jpeg" style={{...styles.cardImg, minHeight:"400px"}}/>
                 <div className="layer"></div>
                 <div className="info" style={{color:"white"}}>
                     <h3 className="heading">15C4I, SAF</h3>
@@ -224,7 +224,7 @@ export default function Homepage() {
 
           
       </section>
-      <section id="education" style={{minHeight: "150vh", backgroundImage: "url('src/assets/bg6.jpeg')", backgroundSize:"cover",scrollMarginTop: "1px"}}>
+      <section id="education" style={{minHeight: "150vh", backgroundImage: "url('./bg6.jpeg')", backgroundSize:"cover",scrollMarginTop: "1px"}}>
           <div style={{paddingTop:"5%", height:"auto", maxHeight:"150px",width:"100%", textAlign:"center"}}>
             <h1 style={styles.specialText3}>Education</h1>
           </div>
@@ -235,7 +235,7 @@ export default function Homepage() {
            <div id="expContainer" className="container" style={styles.display}>
             
             <motion.div {...fadeIn} className="card" style={styles.cardContainer} variants={cardVariants} onClick={() => handleCardClick('Clubs and Societies: Member of EYE Investment and SMU Paw club. \n ', 'src/assets/scis1.JPG')}>
-                <img src="src/assets/scis.png" style={styles.cardImg}/>
+                <img src="./scis.png" style={styles.cardImg}/>
                 <div className="layer" ></div>
                 <div className="info" style={{color:"white"}}>
                     <h3 className="heading">Singapore Management University</h3>
@@ -246,7 +246,7 @@ export default function Homepage() {
             </motion.div>
 
             <motion.div {...fadeIn} className="card" style={styles.cardContainer} onClick={() => handleCardClick('Subject taken: H2 Chem, H2 Math, H2 Econs, H1 Hist\n Awards: Principal`s Honour for Promos and MYE', 'src/assets/cjc1.jpg')}>
-                <img src="src/assets/CJC.png" style={styles.cardImg}/>
+                <img src="./CJC.png" style={styles.cardImg}/>
                 <div className="layer"></div>
                 <div className="info" style={{color:"white"}}>
                     <h3 className="heading">Catholic Junior College</h3>
@@ -257,7 +257,7 @@ export default function Homepage() {
             </motion.div>
 
             <motion.div {...fadeIn} className="card" style={styles.cardContainer} >
-                <img src="src/assets/manjuju.png" style={{...styles.cardImg}}/>
+                <img src="./manjuju.png" style={{...styles.cardImg}}/>
                 <div className="layer"></div>
                 <div className="info" style={{color:"white"}}>
                     <h3 className="heading">Manjusri Secondary School</h3>
@@ -284,7 +284,7 @@ export default function Homepage() {
             </motion.div>
 
             <motion.div {...fadeIn} className="card" style={styles.cardSkillContainer} variants={cardVariants} onClick={() => handleCardClick('Self-taught Java script programming for web app developments and fullstack')}>
-                <img src="src/assets/JavaScript-logo.png" style={styles.cardImg}/>
+                <img src="./JavaScript-logo.png" style={styles.cardImg}/>
                 <div className="layer" ></div>
                 <div className="info" style={{color:"white"}}> 
                     <h5 className="year">Javascript</h5>
@@ -292,7 +292,7 @@ export default function Homepage() {
                 </div>
             </motion.div>
             <motion.div {...fadeIn} className="card" style={styles.cardSkillContainer} variants={cardVariants} onClick={() => handleCardClick('Experienced in managing databases and creating an efficient database')}>
-                <img src="src/assets/mysql.png" style={styles.cardImg}/>
+                <img src="./mysql.png" style={styles.cardImg}/>
                 <div className="layer" ></div>
                 <div className="info" style={{color:"white"}}> 
                     <h5 className="year">SQL</h5>
@@ -301,7 +301,7 @@ export default function Homepage() {
             </motion.div>
 
             <motion.div {...fadeIn} className="card" style={styles.cardSkillContainer} variants={cardVariants} >
-                <img src="src/assets/c.png" style={styles.cardImg}/>
+                <img src="./c.png" style={styles.cardImg}/>
                 <div className="layer" ></div>
                 <div className="info" style={{color:"white"}}> 
                     <h5 className="year">C</h5>
@@ -310,7 +310,7 @@ export default function Homepage() {
             </motion.div>
 
             <motion.div {...fadeIn} className="card" style={styles.cardSkillContainer} variants={cardVariants} onClick={() => handleCardClick('Basic understanding of HTML and CSS')}>
-                <img src="src/assets/htmlcss.png" style={styles.cardImg}/>
+                <img src="./htmlcss.png" style={styles.cardImg}/>
                 <div className="layer" ></div>
                 <div className="info" style={{color:"white"}}> 
                     <h5 className="year">HTML & CSS</h5>
@@ -319,7 +319,7 @@ export default function Homepage() {
             </motion.div>
 
             <motion.div {...fadeIn} className="card" style={styles.cardSkillContainer} variants={cardVariants} onClick={() => handleCardClick('Exeperience in developing backend using spring framework and RESTful Apis')}>
-                <img src="src/assets/spring.webp" style={styles.cardImg}/>
+                <img src="./spring.webp" style={styles.cardImg}/>
                 <div className="layer" ></div>
                 <div className="info" style={{color:"white"}}> 
                     <h5 className="year">Spring</h5>
@@ -328,7 +328,7 @@ export default function Homepage() {
             </motion.div>
 
             <motion.div {...fadeIn} className="card" style={styles.cardSkillContainer} variants={cardVariants} onClick={() => handleCardClick('Advanced Java knowledge in terms of OOP and backend development')}>
-                <img src="src/assets/java.jpeg" style={styles.cardImg}/>
+                <img src="./java.jpeg" style={styles.cardImg}/>
                 <div className="layer" ></div>
                 <div className="info" style={{color:"white"}}> 
                     <h5 className="year">Java</h5>
@@ -337,7 +337,7 @@ export default function Homepage() {
             </motion.div>
 
             <motion.div {...fadeIn} className="card" style={styles.cardSkillContainer} variants={cardVariants}>
-                <img src="src/assets/asm.png" style={styles.cardImg}/>
+                <img src="./asm.png" style={styles.cardImg}/>
                 <div className="layer" ></div>
                 <div className="info" style={{color:"white"}}> 
                     <h5 className="year">Assembly</h5>
@@ -346,7 +346,7 @@ export default function Homepage() {
             </motion.div>
 
             <motion.div {...fadeIn} className="card" style={styles.cardSkillContainer} variants={cardVariants} onClick={() => handleCardClick('Have experiences using python for simple data analysis and training basic models')}>
-                <img src="src/assets/python.jpeg" style={styles.cardImg}/>
+                <img src="./python.jpeg" style={styles.cardImg}/>
                 <div className="layer" ></div>
                 <div className="info" style={{color:"white"}}> 
                     <h5 className="year">Python</h5>
@@ -360,7 +360,7 @@ export default function Homepage() {
           
       </section>
 
-      <section id="contact" style={{minHeight: "90vh", backgroundImage: "url('src/assets/bg.jpeg')", backgroundSize:"contain",scrollMarginTop: "30px"}} ref={aboutRef}>
+      <section id="contact" style={{minHeight: "90vh", backgroundImage: "url('./bg.jpeg')", backgroundSize:"contain",scrollMarginTop: "30px"}} ref={aboutRef}>
         
           <div style={{paddingTop:"5%", height:"80px",width:"100%", textAlign:"center", marginBottom:"5%",}}>
             <h1 style={styles.specialText4}> Contact</h1>
@@ -442,7 +442,7 @@ const styles = {
 
   specialText: {
     fontSize:"4rem", 
-    backgroundImage:"url('src/assets/bg8.jpeg')",
+    backgroundImage:"url('./bg8.jpeg')",
     backgroundPosition:"center",
     backgroundClip:"text",
     color:"transparent",
@@ -450,7 +450,7 @@ const styles = {
 
   specialText2: {
     fontSize:"4rem", 
-    backgroundImage:"url('src/assets/bg10.jpeg')",
+    backgroundImage:"url('./bg10.jpeg')",
     backgroundPosition:"top",
     backgroundClip:"text",
     color:"transparent",
@@ -458,7 +458,7 @@ const styles = {
 
   specialText3: {
     fontSize:"4rem", 
-    backgroundImage:"url('src/assets/bg5.jpeg')",
+    backgroundImage:"url('./bg5.jpeg')",
     backgroundPosition:"top",
     backgroundClip:"text",
     color:"transparent",
@@ -466,7 +466,7 @@ const styles = {
 
   specialText4: {
     fontSize:"4rem", 
-    backgroundImage:"url('src/assets/bg5.jpeg')",
+    backgroundImage:"url('./bg5.jpeg')",
     backgroundPosition:"center",
     backgroundClip:"text",
     color:"transparent",
