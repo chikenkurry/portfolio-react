@@ -4,7 +4,6 @@ import "../pages/HomepageStyle.css";
 import Modal from '../pages/Modal.jsx'; 
 import video1 from "/meVid.mp4";
 import video3 from "/me11.mp4";
-import video2 from "/me3.mov";
 import { FaInstagram,FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
@@ -122,7 +121,7 @@ export default function Homepage() {
       </div>
       <div style={{margin:"20px", paddingTop:"20px"}}>
       <motion.img 
-          src="src/assets/me1.jpg" 
+          src="/assets/me1.jpg" 
           className="img-fluid" 
           style={{width:"100%", maxWidth:"550px", height:"80%", maxheight:"650px", objectFit:"cover", borderRadius:"50px", marginBottom:"3%"}}
           initial={{ opacity: 0, scale:0.5 }}
